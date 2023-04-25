@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "print_orders",
+  "info": {
+    "singularName": "print-order",
+    "pluralName": "print-orders",
+    "displayName": "printOrder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "noOfCopies": {
+      "type": "integer"
+    },
+    "basicFormatting": {
+      "type": "boolean"
+    },
+    "documentVetting": {
+      "type": "boolean"
+    },
+    "proofReading": {
+      "type": "boolean"
+    },
+    "homeDelivery": {
+      "type": "boolean"
+    },
+    "state": {
+      "type": "string"
+    },
+    "lga": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "pickUpLocation": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "documentId": {
+      "type": "uid"
+    },
+    "status": {
+      "type": "string"
+    },
+    "noOfPages": {
+      "type": "string"
+    },
+    "deliveryAddress": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "float"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "print_orders"
+    }
+  }
+}

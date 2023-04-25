@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/emails",
+      "handler": "Email.send",
+      "config": {}
+    },
+    {
+      "method": "POST",
+      "path": "/emails/update",
+      "handler": "Email.update",
+      "config": {}
+    },
+    {
+      "method": "POST",
+      "path": "/emails/create",
+      "handler": "Email.create",
+      "config": {}
+    }
+  ]
+}
